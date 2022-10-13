@@ -1,0 +1,76 @@
+node-d3-brush (1.1.5-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Pirate Praveen ]
+  * Use node-rollup-plugin-terser (now available in the archive)
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 14 Dec 2020 17:39:20 +0530
+
+node-d3-brush (1.1.5-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Abhijith Sheheer ]
+  * New upstream version 1.1.5
+  * Bump Standards-Version to 4.4.1 (no changes needed)
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+  * Fixed URL in debian/copyright
+  * Added Rules-Requires-Root
+
+  [ Xavier Guimard ]
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Fix image install and patch README.md to use them
+  * Use pkg-js-tools auto install
+  * Add patch description
+  * debian/copyright: fix license name
+  * Drop unneeded version constraints from (build) dependencies
+
+ -- Abhijith Sheheer <abhijithsheheer@gmail.com>  Mon, 09 Dec 2019 22:24:54 +0530
+
+node-d3-brush (1.0.6-3) unstable; urgency=medium
+
+  * Install in /usr/share/nodejs
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 05 Aug 2019 08:21:54 +0000
+
+node-d3-brush (1.0.6-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Make build reproducible
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 08 Jul 2019 12:38:55 +0530
+
+node-d3-brush (1.0.6-1) experimental; urgency=medium
+
+  * New upstream version 1.0.6
+  * Use rollup.config.js, uglifyjs.terser and pkg-js-tools
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Use salsa.debian.org in Vcs-* fields
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 18 Jun 2019 20:36:09 +0530
+
+node-d3-brush (1.0.4-3) unstable; urgency=medium
+
+  * Build using rollup (webpack was used before rollup was available in main)
+  * Bump debhelper compat to 11
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 28 Feb 2018 20:53:05 +0530
+
+node-d3-brush (1.0.4-2) unstable; urgency=medium
+
+  * Use webpack to build umd module
+  * Bump standards
+  * Use externals to replace rollup -g
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 07 Jan 2018 18:34:21 +0530
+
+node-d3-brush (1.0.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #877600)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 03 Oct 2017 17:20:47 +0530
