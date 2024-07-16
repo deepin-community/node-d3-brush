@@ -1,36 +1,34 @@
 Source: node-d3-brush
+Section: javascript
+Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
-Section: javascript
-Testsuite: autopkgtest-pkg-nodejs
-Priority: optional
-Build-Depends:
- debhelper-compat (= 12)
- , pkg-js-tools (>= 0.9.19~)
- , rollup
- , node-rollup-plugin-terser
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-d3-dispatch
  , node-d3-drag
  , node-d3-interpolate
- , node-d3-dispatch
  , node-d3-selection
  , node-d3-transition
+ , node-rollup-plugin-terser
  , node-tape <!nocheck>
-Standards-Version: 4.5.1
+ , rollup
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-d3-brush
 Vcs-Git: https://salsa.debian.org/js-team/node-d3-brush.git
 Homepage: https://d3js.org/d3-brush/
+Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
 Package: node-d3-brush
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: node-d3-dispatch
  , node-d3-drag
  , node-d3-interpolate
- , node-d3-dispatch
  , node-d3-selection
  , node-d3-transition
+ , ${misc:Depends}
+Provides: ${nodejs:Provides}
 Description: Select a one- or two-dimensional region using the mouse or touch
  Brushing is the interactive specification a one- or two-dimensional selected
  region using a pointing gesture, such as by clicking and dragging the mouse.
